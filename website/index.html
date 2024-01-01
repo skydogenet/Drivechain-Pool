@@ -1,0 +1,73 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="bitzeny, ariel, mining, pool, cryptocurrency">
+    <meta name="description" content="Skydoge node open mining portal">
+
+    <link rel="shortcut icon" href="/static/favicon.png" />
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.4.2/pure-min.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css">
+
+    <script src="/static/main.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>Skydoge pool</title>
+
+</head>
+
+<body>
+
+
+    <header>
+	<meta name="author" content="">
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal">
+
+            <a class="pure-menu-heading hot-swapper" href="/"><i class="fa fa-home"></i>&nbsp;Skydoge pool</a>
+
+            <ul>
+                <li class="{{? it.selected === 'getting_started' }}pure-menu-selected{{?}}">
+                    <a class="hot-swapper" href="/getting_started">
+                        <i class="fa fa-rocket"></i>&nbsp;
+                        Getting Started
+                    </a>
+                </li>
+                <li class="{{? it.selected === 'stats' }}pure-menu-selected{{?}}">
+                    <a class="hot-swapper" href="/stats">
+                        <i class="fa fa-bar-chart-o"></i>&nbsp;
+                        Graph Stats
+                    </a>
+                </li>
+				    <li class="{{? it.selected === 'workers' }}pure-menu-selected{{?}}">
+                    <a class="hot-swapper" href="/workers">
+                        <i class="fa fa-cogs"></i>&nbsp;
+                        Workers Stats
+                    </a>
+                </li>
+				<li class="{{? it.selected === 'Linktree' }}pure-menu-selected{{?}}">
+                    <a href="https://linktr.ee/skydoge">
+                    <i class="fa fa-location-arrow"></i>&nbsp;
+                    Linktree
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        {{=it.page}}
+    </main>
+
+
+</body>
+</html>

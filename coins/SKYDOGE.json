@@ -1,0 +1,8 @@
+{   
+    "enabled":true,
+    "name": "SkyDoge",
+    "symbol": "SkyDoge",
+    "algorithm": "skydoge"
+}
+
+/*true*/    /*false*/
