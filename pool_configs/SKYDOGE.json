@@ -1,0 +1,79 @@
+{
+    "enabled": true,    /*true*/    /*false*/
+    "coin": "SKYDOGE.json",
+    "name1":" SKYDOGE ",
+    "fee":" 1% ",
+    "csqr":" 101 ",		
+    "algo":" skydoge ",		
+    "payment":" 500  ",
+    "txfee": 0.0005,
+    "address": "1JT2A4beGNePawfRC8ieH9DdYkHYn489Yg",
+
+    "rewardRecipients": {
+        "1BAqopSntiTQGftCTmj1PewNVtcyUZ6t4t": 1
+    },
+	
+    "tlsOptions": {
+        "enabled": true,
+        "serverKey": "/root/private.key",
+        "serverCert": "/root/cert.pem",
+        "ca": ""
+    },
+    "paymentProcessing": {
+	"minConf": 10,
+        "enabled": true,
+        "paymentMode": "pplnt",
+        "_comment_paymentMode":"prop, pplnt",
+        "paymentInterval": 3600,
+        "minimumPayment": 100,
+        "maxBlocksPerPayment": 33,
+        "daemon": {
+            "host": "192.99.160.225",
+            "port": 6701,
+            "user": "SKSK",
+            "password": "DOGE"
+        }
+    },
+
+    "ports": {
+        "2001": {
+			"tls":false,
+            "diff": 0.006,
+            "varDiff": {
+                "minDiff": 0.006,
+                "maxDiff": 0.024,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "192.99.160.225",
+            "port": 6701,
+            "user": "SKSK",
+            "password": "DOGE"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 25253,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "",
+        "password": "",
+        "database": "",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
